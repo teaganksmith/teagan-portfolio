@@ -1,0 +1,13 @@
+# robots.txt — Teagan Keely Smith Portfolio
+# TODO: Replace teagankeelysmith.com with your actual domain
+
+User-agent: *
+Allow: /
+
+# Keep audio files indexable (for accessibility and discovery)
+Allow: /audio/
+
+# Disallow any potential build/admin directories
+Disallow: /.git/
+
+Sitemap: https://teagankeelysmith.com/sitemap.xml

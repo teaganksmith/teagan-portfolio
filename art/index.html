@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Art — Teagan Keely Smith</title>
+  <meta name="description" content="Visual art by Teagan Keely Smith — oil paintings and biological illustrations exploring climate grief, ecological loss, and the natural world. Prints available on Etsy." />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Art — Teagan Keely Smith" />
+  <meta property="og:description" content="Oil paintings and biological illustrations exploring climate grief and ecological loss. Original works and prints available on Etsy." />
+  <meta property="og:url" content="https://teagankeelysmith.com/art/" />
+  <meta property="og:image" content="https://teagankeelysmith.com/images/og-default.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="canonical" href="https://teagankeelysmith.com/art/" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <!-- GLightbox -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+
+  <link rel="stylesheet" href="../css/main.css" />
+
+  <style>
+    /* Gallery-specific overrides */
+    .masonry-grid {
+      columns: 3 260px;
+      column-gap: var(--space-2);
+    }
+    .masonry-item {
+      break-inside: avoid;
+      display: block;
+      margin-bottom: var(--space-2);
+      border-radius: var(--radius-card);
+      overflow: hidden;
+      border: 0.5px solid var(--color-border);
+      transition: border-color 180ms ease, transform 180ms ease;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    .masonry-item:hover {
+      border-color: var(--color-accent);
+      transform: translateY(-2px);
+    }
+    .masonry-item.hidden {
+      display: none;
+    }
+    .masonry-item img {
+      width: 100%;
+      display: block;
+    }
+    /* Placeholder art items */
+    .art-ph {
+      width: 100%;
+      background: var(--color-bg-secondary);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: var(--space-4) var(--space-3);
+      font-size: 0.78rem;
+      color: var(--color-text-muted);
+      font-style: italic;
+      text-align: center;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="site-nav" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="/" class="nav-logo">Teagan Keely Smith</a>
+      <ul class="nav-links" role="list">
+        <li><a href="/writing/">Writing</a></li>
+        <li><a href="/research/">Research</a></li>
+        <li><a href="/art/" class="active">Art</a></li>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/cv/">CV</a></li>
+        <li><a href="/contact/">Contact</a></li>
+      </ul>
+      <button class="nav-hamburger" aria-label="Open navigation menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <nav class="nav-overlay" aria-label="Mobile navigation" aria-hidden="true">
+    <button class="nav-close" aria-label="Close navigation menu">✕</button>
+    <a href="/">Home</a>
+    <a href="/writing/">Writing</a>
+    <a href="/research/">Research</a>
+    <a href="/art/" class="active">Art</a>
+    <a href="/about/">About</a>
+    <a href="/cv/">CV</a>
+    <a href="/contact/">Contact</a>
+  </nav>
+
+  <main>
+    <header class="page-header">
+      <div class="page-header-inner">
+        <h1 class="page-h1">Art</h1>
+      </div>
+    </header>
+
+    <div class="container">
+
+      <!-- ============================================================
+           ARTIST STATEMENT
+           ============================================================ -->
+      <div class="artist-statement prose">
+        <p>
+          My art practice runs parallel to my scientific work, not beneath it. I make oil paintings and biological illustrations that grow out of the same questions my research asks — about ecological relationship, loss, and what it means to pay close attention to the living world at a moment when so much of it is disappearing.
+        </p>
+        <p>
+          The oil paintings are concerned with climate grief: the particular feeling of knowing the science and still having to find a way to live inside it. The biological illustrations bring the precision of field observation into a different register — form, texture, the logic of an organism's structure as a kind of argument.
+        </p>
+        <p>
+          Original works and prints are available in my Etsy shop. Process, studies, and new work on Instagram.
+        </p>
+      </div>
+
+      <!-- Etsy + Instagram callout -->
+      <div style="display:flex;gap:var(--space-3);flex-wrap:wrap;margin-bottom:var(--space-8);padding:var(--space-4);background:var(--color-bg-secondary);border-radius:var(--radius-card);border:0.5px solid var(--color-border);align-items:center;">
+        <div style="flex:1;min-width:200px;">
+          <p style="font-size:0.85rem;color:var(--color-text-muted);margin-bottom:var(--space-2);">Original works &amp; prints available to purchase</p>
+          <!-- TODO: Replace # with your real Etsy shop URL: https://etsy.com/shop/[yourshopname] -->
+          <a href="https://etsy.com/shop/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm" style="display:inline-flex;align-items:center;gap:6px;">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M11.5 2C6.25 2 2 6.25 2 11.5S6.25 21 11.5 21 21 16.75 21 11.5 16.75 2 11.5 2zm4.06 6.54l-.74.04c-.51.03-.64.15-.64.69v1.77h1.38l-.18 1.54H14.2v4.88h-2v-4.88h-.93v-1.54h.93V9.12c0-1.39.65-2.12 2.21-2.12.52 0 1.05.06 1.14.08v1.46z"/></svg>
+            Shop on Etsy →
+          </a>
+        </div>
+        <div style="width:0.5px;background:var(--color-border);align-self:stretch;"></div>
+        <div style="flex:1;min-width:200px;">
+          <p style="font-size:0.85rem;color:var(--color-text-muted);margin-bottom:var(--space-2);">Process, studies &amp; new work</p>
+          <!-- TODO: Replace # with your real Instagram URL: https://instagram.com/[yourhandle] -->
+          <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" style="display:inline-flex;align-items:center;gap:6px;">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            Follow on Instagram →
+          </a>
+        </div>
+      </div>
+
+      <!-- ============================================================
+           FILTERS
+           ============================================================ -->
+      <div class="art-filters filter-bar" id="art-filter" role="group" aria-label="Filter artwork by theme">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="oil-paintings">Oil Paintings</button>
+        <button class="filter-btn" data-filter="biological-illustration">Biological Illustration</button>
+        <!-- TODO: Add or rename categories to match your actual series once you know how you want to group the work -->
+      </div>
+
+      <!-- ============================================================
+           MASONRY GALLERY
+           ============================================================ -->
+      <!-- TODO: Replace all placeholder items with real artwork.
+           For each item:
+           - href: link to full-size image (WebP, min 1500px on long edge)
+           - data-glightbox: title|description (pipe separated)
+           - data-theme: one of the filter values above
+           - alt text: "[Title], [Medium], [Year] — [1-sentence thematic description]"
+           Images in /images/art/ directory. Serve WebP with JPEG fallback. -->
+
+      <!-- TODO: Replace each placeholder below with a real artwork.
+           For each item set:
+             href → the full-size image path (e.g. ../images/art/painting-01.webp)
+             data-glightbox → "title: [Title] | description: Oil on [surface], [dimensions], [Year]. [1–2 sentences.]"
+             data-theme → "oil-paintings" or "biological-illustration"
+             aria-label → descriptive text for screen readers
+           Replace the .art-ph div with: <img src="../images/art/filename.webp" alt="..." loading="lazy"> -->
+
+      <div class="masonry-grid" role="list" aria-label="Art gallery">
+
+        <!-- PLACEHOLDER 1 — Oil painting, tall -->
+        <a class="masonry-item" href="#"
+          data-glightbox="title: [Painting title 1] | description: Oil on [canvas/board], [dimensions], [Year]. [1–2 sentences about the climate grief theme or ecological subject.]"
+          data-theme="oil-paintings"
+          aria-label="[Painting title 1], oil painting — placeholder"
+          role="listitem">
+          <div class="art-ph" style="min-height:320px;">
+            [Oil painting 1]<br>
+            [Title] · Oil on [surface] · [Year]
+          </div>
+        </a>
+
+        <!-- PLACEHOLDER 2 — Biological illustration, short -->
+        <a class="masonry-item" href="#"
+          data-glightbox="title: [Illustration title 1] | description: [Medium], [dimensions], [Year]. [1–2 sentences about the species or ecological subject depicted.]"
+          data-theme="biological-illustration"
+          aria-label="[Illustration title 1], biological illustration — placeholder"
+          role="listitem">
+          <div class="art-ph" style="min-height:200px;">
+            [Biological illustration 1]<br>
+            [Title] · [Medium] · [Year]
+          </div>
+        </a>
+
+        <!-- PLACEHOLDER 3 — Oil painting -->
+        <a class="masonry-item" href="#"
+          data-glightbox="title: [Painting title 2] | description: Oil on [canvas/board], [dimensions], [Year]. [1–2 sentences.]"
+          data-theme="oil-paintings"
+          aria-label="[Painting title 2], oil painting — placeholder"
+          role="listitem">
+          <div class="art-ph" style="min-height:260px;">
+            [Oil painting 2]<br>
+            [Title] · Oil on [surface] · [Year]
+          </div>
+        </a>
+
+        <!-- PLACEHOLDER 4 — Biological illustration, tall -->
+        <a class="masonry-item" href="#"
+          data-glightbox="title: [Illustration title 2] | description: [Medium], [dimensions], [Year]. [1–2 sentences about the organism or observation depicted.]"
+          data-theme="biological-illustration"
+          aria-label="[Illustration title 2], biological illustration — placeholder"
+          role="listitem">
+          <div class="art-ph" style="min-height:300px;">
+            [Biological illustration 2]<br>
+            [Title] · [Medium] · [Year]
+          </div>
+        </a>
+
+        <!-- PLACEHOLDER 5 — Oil painting, short -->
+        <a class="masonry-item" href="#"
+          data-glightbox="title: [Painting title 3] | description: Oil on [canvas/board], [dimensions], [Year]. [1–2 sentences.]"
+          data-theme="oil-paintings"
+          aria-label="[Painting title 3], oil painting — placeholder"
+          role="listitem">
+          <div class="art-ph" style="min-height:200px;">
+            [Oil painting 3]<br>
+            [Title] · Oil on [surface] · [Year]
+          </div>
+        </a>
+
+        <!-- PLACEHOLDER 6 — Biological illustration -->
+        <a class="masonry-item" href="#"
+          data-glightbox="title: [Illustration title 3] | description: [Medium], [dimensions], [Year]. [1–2 sentences.]"
+          data-theme="biological-illustration"
+          aria-label="[Illustration title 3], biological illustration — placeholder"
+          role="listitem">
+          <div class="art-ph" style="min-height:240px;">
+            [Biological illustration 3]<br>
+            [Title] · [Medium] · [Year]
+          </div>
+        </a>
+
+        <!-- TODO: Add more items as needed — gallery comfortably holds 10–20 pieces -->
+
+      </div><!-- /.masonry-grid -->
+
+      <!-- ============================================================
+           PRINT / COMMISSION NOTE
+           ============================================================ -->
+      <p class="print-note">
+        Prints and originals available in the
+        <!-- TODO: Replace # with your Etsy shop URL -->
+        <a href="https://etsy.com/shop/" target="_blank" rel="noopener noreferrer">Etsy shop</a>
+        · Commissions via
+        <a href="mailto:teaganksmith@gmail.com">teaganksmith@gmail.com</a>
+      </p>
+
+    </div><!-- /.container -->
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-inner">
+      <span class="footer-name">Teagan Keely Smith</span>
+      <span class="footer-copyright">© 2026</span>
+      <nav class="footer-links" aria-label="Footer links">
+        <a href="mailto:teaganksmith@gmail.com">teaganksmith@gmail.com</a>
+        <a href="https://orcid.org/" target="_blank" rel="noopener noreferrer">ORCID</a>
+        <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://substack.com/" target="_blank" rel="noopener noreferrer">Substack</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- GLightbox -->
+  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+  <script>
+    const lightbox = GLightbox({
+      touchNavigation: true,
+      loop: true,
+      autoplayVideos: false,
+      onOpen: () => {},
+      keyboardNavigation: true,
+    });
+  </script>
+
+  <script src="../js/nav.js" defer></script>
+  <script src="../js/filter.js" defer></script>
+</body>
+</html>

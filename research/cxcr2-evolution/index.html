@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Evolutionary Genomics Research — Teagan Keely Smith</title>
-  <meta name="description" content="NSERC-funded evolutionary genomics research on C4 photosynthesis and cetacean protein evolution. Sage Lab, University of Toronto. PAML molecular evolution analysis." />
+  <title>CXCR2 Cetacean Protein Evolution — Teagan Keely Smith</title>
+  <meta name="description" content="Evidence of purifying selection in CXCR2 reveals differences in cetacean rate of protein evolution. EEB460, University of Toronto, 2023." />
 
   <meta property="og:type" content="article" />
-  <meta property="og:title" content="Evolutionary Genomics Research (NSERC) — Teagan Keely Smith" />
-  <meta property="og:url" content="https://teagankeelysmith.com/research/future-msc/" />
+  <meta property="og:title" content="CXCR2 Cetacean Protein Evolution — Teagan Keely Smith" />
+  <meta property="og:url" content="https://teagankeelysmith.com/research/cxcr2-evolution/" />
   <meta property="og:image" content="https://teagankeelysmith.com/images/og-default.jpg" />
   <meta name="twitter:card" content="summary_large_image" />
-  <link rel="canonical" href="https://teagankeelysmith.com/research/future-msc/" />
+  <link rel="canonical" href="https://teagankeelysmith.com/research/cxcr2-evolution/" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -54,40 +54,47 @@
       <div class="project-header">
         <div class="project-meta-row">
           <span class="pill pill-status-complete">Complete</span>
-          <span class="pill">NSERC USRA</span>
           <span class="pill">Molecular Evolution</span>
           <span class="pill">Bioinformatics</span>
         </div>
 
         <h1 style="font-family:var(--font-display);font-size:clamp(1.6rem,3vw + 0.5rem,2.4rem);font-weight:400;line-height:1.2;margin-bottom:var(--space-2);">
-          Evolutionary Genomics of C4 Photosynthesis
+          Evidence of Purifying Selection in Cytokine Receptor 2 (CXCR2) Reveals Differences in Cetacean Rate of Protein Evolution
         </h1>
 
         <p style="font-size:0.9rem;color:var(--color-text-muted);">
-          Sage Lab, Department of Ecology &amp; Evolutionary Biology, University of Toronto ·
-          Toronto, ON · May – September 2020 ·
-          Supervisor: Dr. Tammy Sage ·
-          <strong style="font-weight:500;color:var(--color-accent);">NSERC Undergraduate Student Research Award recipient</strong>
+          EEB460, University of Toronto · Toronto, ON · 2023
+        </p>
+      </div>
+
+      <blockquote class="project-question">
+        Is there a quantifiable difference in CXCR2 protein evolution rates across cetaceans, and does purifying selection on this immune receptor contribute to reduced cancer incidence in large-bodied baleen whales?
+      </blockquote>
+
+      <div class="project-section">
+        <p class="project-section-label">My Role</p>
+        <p style="line-height:1.75;">
+          I designed and executed the full analysis independently: sequence acquisition, alignment, phylogenetic reconstruction, and evolutionary selection analysis across a 20-species cetacean dataset.
         </p>
       </div>
 
       <div class="project-section">
-        <p class="project-section-label">My Role &amp; Funding</p>
+        <p class="project-section-label">Methods</p>
         <p style="line-height:1.75;">
-          Funded by the NSERC (National Sciences and Engineering Research Council of Canada) Undergraduate Student Research Award, I conducted an independent literature review on C4 photosynthesis, covering convergent evolution, leaf anatomy, gene expression, and the anthropogenic significance of C4 crop research. I also interviewed researchers in the field and compiled findings into reports presented at lab meetings.
+          CXCR2 amino acid sequences were obtained from NCBI and Ensembl and aligned using ClustalO. The dataset included 17 cetacean species and 3 artiodactyl outgroups. Maximum likelihood phylogenetic reconstruction was performed in MEGA using the JTT + G model selected across BIC, AICc, and parameter number calculations, with bootstrap support from 500 replicates. Branch length analysis used Mr. Bayes phylogenetic reconstruction configured with GTR + G + I substitution rates and Blosum62 likelihood model, run for 10,000 MCMC generations. Trees were visualized in FigTree. Evolutionary selection analysis was attempted in PAML using random site models and branch-site models to assess dN/dS rates and positive selection.
         </p>
       </div>
 
       <div class="project-section">
-        <p class="project-section-label">Research Focus</p>
+        <p class="project-section-label">Key Findings</p>
         <p style="line-height:1.75;">
-          C4 photosynthesis has evolved independently across roughly 66 angiosperm lineages, making it one of the strongest examples of convergent evolution in biology. This review examined the physiological and genomic mechanisms driving that convergence, from Kranz anatomy and plasmodesmata function to lateral gene transfer and transcriptional regulation, and their implications for bioengineering climate-resilient crops.
+          Mysticetes showed significantly shorter CXCR2 branch lengths than most Odontocetes, indicating slower rates of amino acid substitution. Delphinidae and Inioidea showed the highest substitution rates. Results support the hypothesis that purifying selection acts on CXCR2 in large-bodied baleen whales, potentially suppressing tumorigenesis pathways consistent with Peto's Paradox. PAML dN/dS analysis was limited by stop codons in predicted codon sequences, constraining conclusions on directional selection.
         </p>
       </div>
 
       <div style="margin-top:var(--space-8);padding-top:var(--space-4);border-top:0.5px solid var(--color-border);display:flex;gap:var(--space-3);flex-wrap:wrap;">
         <a href="/research/" class="btn btn-secondary btn-sm">← All research</a>
-        <a href="/research/cetacean-bioacoustics/" class="btn btn-secondary btn-sm">First project →</a>
+        <a href="/research/cetacean-bioacoustics/" class="btn btn-secondary btn-sm">Next project →</a>
       </div>
 
     </div>

@@ -27,7 +27,6 @@
         <li><a href="/writing/">Writing</a></li>
         <li><a href="/research/">Research</a></li>
         <li><a href="/art/">Art</a></li>
-        <li><a href="/about/">About</a></li>
         <li><a href="/cv/" class="active">CV</a></li>
         <li><a href="/contact/">Contact</a></li>
       </ul>
@@ -43,7 +42,6 @@
     <a href="/writing/">Writing</a>
     <a href="/research/">Research</a>
     <a href="/art/">Art</a>
-    <a href="/about/">About</a>
     <a href="/cv/" class="active">CV</a>
     <a href="/contact/">Contact</a>
   </nav>
@@ -54,19 +52,6 @@
       CV / Curriculum Vitae
     </h1>
 
-    <!-- Download bar -->
-    <div class="cv-download-bar">
-      <div>
-        <!-- TODO: Upload real PDF to /cv/teagan-keely-smith-cv.pdf and update href below -->
-        <a href="/cv/teagan-keely-smith-cv.pdf" class="btn btn-primary" download
-          aria-label="Download PDF version of Teagan Keely Smith's CV">
-          ↓ Download PDF
-        </a>
-      </div>
-      <!-- TODO: Update date when CV is revised -->
-      <span class="cv-updated">Last updated: April 2026</span>
-    </div>
-
     <!-- ============================================================
          1. EDUCATION
          ============================================================ -->
@@ -75,16 +60,32 @@
 
       <div class="cv-entry">
         <div class="cv-entry-header">
-          <span class="cv-entry-title">Honours Bachelor of Science — Ecology &amp; Evolutionary Biology (Major), Animal Physiology (Major), Cells &amp; Systems Biology (Minor)</span>
+          <span class="cv-entry-title">MSc Marine Biological Resources, IMBRSea consortium</span>
+          <span class="cv-entry-date">2026 – 2028</span>
+        </div>
+        <p class="cv-entry-org">Ghent University · Sorbonne University</p>
+      </div>
+
+      <div class="cv-entry">
+        <div class="cv-entry-header">
+          <span class="cv-entry-title">Honours Bachelor of Science</span>
           <span class="cv-entry-date">December 2023</span>
         </div>
         <p class="cv-entry-org">University of Toronto · Toronto, ON</p>
         <p class="cv-entry-desc">
-          Transitional Year Programme graduate (May 2019)<br>
-          Relevant coursework: Biostatistics, Bioinformatics, Molecular Phylogenetics, Genomics, GWAS Data Quality Control, Polygenic Risk Score Calculation, Applied Conservation Biology, Community Ecology, Comparative Anatomy and Neuroscience.
-          <br><br>
-          <em>Selected research paper:</em> EEB460 — "Evidence of purifying selection in cytokine receptor 2 (CXCR2) reveals differences in cetacean rate of protein evolution" — GWAS data quality control, PAML molecular evolution analysis, integration of genetic and proteomic data types.
+          Ecology &amp; Evolutionary Biology (Major), Animal Physiology (Major), Cells &amp; Systems Biology (Minor)
         </p>
+      </div>
+
+      <div class="cv-entry" style="padding-top:0;border-top:none;margin-top:0;">
+        <p class="cv-entry-desc" style="color:var(--color-text-muted);">
+          Transitional Year Programme graduate, May 2019
+        </p>
+      </div>
+
+      <div class="cv-entry">
+        <p class="cv-entry-org">Relevant coursework</p>
+        <p class="cv-entry-desc">Biostatistics, Bioinformatics, Molecular Phylogenetics, Genomics, Applied Conservation Biology, Community Ecology, Comparative Anatomy and Neuroscience, Introduction to Marine Mammal Physiology</p>
       </div>
     </section>
 
@@ -96,71 +97,82 @@
 
       <div class="cv-entry">
         <div class="cv-entry-header">
-          <span class="cv-entry-title">Arctic Field Biology — Independent Research Project</span>
+          <span class="cv-entry-title">Quantifying the Frequency and Distribution of Beluga Whale Scars Through Photo Identification in the Churchill River</span>
           <span class="cv-entry-date">July – August 2023</span>
         </div>
-        <p class="cv-entry-org">University of Toronto Mississauga &amp; University of Manitoba · Churchill, MB</p>
-        <p class="cv-entry-org" style="margin-bottom:var(--space-1);">Supervisors: Peter Kotanen, Stephen Peterson</p>
+        <p class="cv-entry-org">Arctic Field Biology Course, University of Toronto Mississauga &amp; University of Manitoba · Churchill, MB</p>
+        <p class="cv-entry-org" style="margin-bottom:var(--space-2);">Supervisors: Peter Kotanen, Stephen Peterson</p>
+        <p class="cv-entry-desc">
+          Independent field research assessing anthropogenic injury to the Churchill River beluga subpopulation. Conducted ten boat surveys, photographed surfacing pods, and analysed 5,642 photos from a 10,239-image catalogue using a seven-segment body classification system developed from existing literature. Of scarred adults, 63.63% carried presumed anthropogenic scars, with entanglement as the most frequent source. Scar distribution varied significantly across body segments (p = 0.005). Produced the beluga body segment illustration used in the study. Collaborated with Beluga Bits citizen science initiative, Assiniboine Park Zoo, and Polar Bear International.
+        </p>
       </div>
 
       <div class="cv-entry">
         <div class="cv-entry-header">
-          <span class="cv-entry-title">Research Project — Ecology &amp; Evolutionary Biology</span>
-          <span class="cv-entry-date">September 2021 – April 2022</span>
+          <span class="cv-entry-title">The Biogeography and Carbon Footprint of Coral Reef Science</span>
+          <span class="cv-entry-date">November 2020 – April 2021</span>
         </div>
-        <p class="cv-entry-org">Darling Lab, EEB, University of Toronto · Toronto, ON</p>
-        <p class="cv-entry-org" style="margin-bottom:var(--space-1);">Advisor: Dr. Emily Darling</p>
+        <p class="cv-entry-org">Darling Lab, Department of Ecology &amp; Evolutionary Biology, University of Toronto · Toronto, ON</p>
+        <p class="cv-entry-org" style="margin-bottom:var(--space-2);">Supervisor: Dr. Emily Darling</p>
+        <p class="cv-entry-desc">
+          Analysed geographic patterns in coral reef science production and research travel using reef health data pulled from MERMAID and integrated with a coral reef publications dataset in R Studio. Used tidyverse to calculate unique travel routes, countries represented, mean distance traveled, and estimated carbon emissions (tCO2e). Results visualised using ggplot2, linking publication records to field site locations and researcher institutional affiliations across biogeographic regions.
+        </p>
       </div>
 
       <div class="cv-entry">
         <div class="cv-entry-header">
-          <span class="cv-entry-title">Research Assistant — <strong style="font-weight:500;color:var(--color-accent);">NSERC Undergraduate Student Research Award</strong></span>
+          <span class="cv-entry-title">Evolutionary Genomics of C4 Photosynthesis — <strong style="font-weight:500;color:var(--color-accent);">NSERC Undergraduate Student Research Award</strong></span>
           <span class="cv-entry-date">May – September 2020</span>
         </div>
-        <p class="cv-entry-org">Sage Lab, EEB, University of Toronto · Toronto, ON</p>
-        <p class="cv-entry-org" style="margin-bottom:var(--space-1);">Advisor: Dr. Tammy Sage</p>
+        <p class="cv-entry-org">Sage Lab, Department of Ecology &amp; Evolutionary Biology, University of Toronto · Toronto, ON</p>
+        <p class="cv-entry-org" style="margin-bottom:var(--space-2);">Supervisor: Dr. Tammy Sage</p>
+        <p class="cv-entry-desc">
+          Conducted an independent literature review on C4 photosynthesis covering convergent evolution, Kranz anatomy, plasmodesmata function, gene expression, lateral gene transfer, and the anthropogenic significance of C4 crop research. Interviewed researchers in the field and compiled findings into reports presented at lab meetings.
+        </p>
       </div>
     </section>
 
     <!-- ============================================================
-         3. PUBLICATIONS & WRITING
+         3. SELECTED WRITING
          ============================================================ -->
     <section class="cv-section" aria-labelledby="cv-writing">
-      <h2 class="cv-section-title" id="cv-writing">Publications &amp; Writing</h2>
+      <h2 class="cv-section-title" id="cv-writing">Selected Writing</h2>
 
-      <p class="cv-subsection-label">Science Communication</p>
-      <!-- TODO: Replace each placeholder with real published piece details -->
-      <div class="cv-entry">
-        <p class="cv-entry-desc" style="color:var(--color-text-muted);font-style:italic;">
-          <!-- TODO: Add published clips as they appear, in format:
-               Smith, T.K. "[Article title]." Outlet Name, Month Year. [URL] -->
-          [Published clip 1 — replace with: Author. "Title." Outlet, Date. URL]
-        </p>
-      </div>
-      <div class="cv-entry">
-        <p class="cv-entry-desc" style="color:var(--color-text-muted);font-style:italic;">
-          [Published clip 2 — replace with real citation]
-        </p>
-      </div>
-
-      <p class="cv-subsection-label">Newsletter (Self-published)</p>
       <div class="cv-entry">
         <div class="cv-entry-header">
-          <!-- TODO: Replace [Newsletter name] with real Substack name and URL -->
-          <span class="cv-entry-title">[Newsletter name] — Substack</span>
+          <span class="cv-entry-title">Evidence of Purifying Selection in Cytokine Receptor 2 (CXCR2) Reveals Differences in Cetacean Rate of Protein Evolution</span>
+          <span class="cv-entry-date">December 2023</span>
+        </div>
+        <p class="cv-entry-org">EEB460H1F, University of Toronto</p>
+        <p class="cv-entry-desc">
+          Investigated CXCR2 protein evolution across 20 cetacean and artiodactyl species to assess whether purifying selection on this immune receptor contributes to reduced cancer incidence in large-bodied baleen whales. Acquired sequences from NCBI and Ensembl, aligned with ClustalO, and reconstructed phylogenies using maximum likelihood in MEGA (JTT + G model, 500 bootstrap replicates) and Bayesian inference in Mr. Bayes (GTR + G + I, Blosum62, 10,000 MCMC generations). Trees visualised in FigTree. Results supported purifying selection acting on Mysticete CXCR2, consistent with Peto's Paradox.
+        </p>
+      </div>
+
+      <div class="cv-entry">
+        <div class="cv-entry-header">
+          <span class="cv-entry-title">Science Communication · Interspecies · <a href="https://teaganksmith.substack.com/" target="_blank" rel="noopener noreferrer" style="color:var(--color-accent);">Substack</a></span>
           <span class="cv-entry-date">2024 – present</span>
         </div>
-        <p class="cv-entry-desc">
-          5 published pieces covering animal cognition, interspecies communication, and bioacoustics. <!-- TODO: Add link to Substack -->
-        </p>
       </div>
     </section>
 
     <!-- ============================================================
-         4. PROFESSIONAL EXPERIENCE (Selected, relevant to science writing)
+         4. PROFESSIONAL EXPERIENCE
          ============================================================ -->
     <section class="cv-section" aria-labelledby="cv-professional">
       <h2 class="cv-section-title" id="cv-professional">Professional Experience</h2>
+
+      <div class="cv-entry">
+        <div class="cv-entry-header">
+          <span class="cv-entry-title">Sales &amp; Customer Journey Manager</span>
+          <span class="cv-entry-date">April 2025 – April 2026</span>
+        </div>
+        <p class="cv-entry-org">Circles Coliving · Barcelona, Spain</p>
+        <p class="cv-entry-desc">
+          Owned the full sales cycle from initial inquiry through to lead conversion, onboarding, and retention, consistently meeting and exceeding monthly occupancy and conversion targets. Managed booking calendar and CRM platform, tracking all client interactions and pipeline activity to maintain accurate visibility for leadership. Reported directly to CEO and investors with monthly sales performance, occupancy metrics, and conversion data, presenting strategic recommendations. Designed and implemented data tracking systems to measure engagement and program impact. Planned and executed monthly community event calendars and local brand partnerships, managing logistics, vendor relationships, and client communications end-to-end. Produced marketing materials including newsletters, social media content, website copy, and filmed and edited video content. Generated new leads through targeted outreach and promotional campaigns across digital channels.
+        </p>
+      </div>
 
       <div class="cv-entry">
         <div class="cv-entry-header">
@@ -168,14 +180,20 @@
           <span class="cv-entry-date">May – September 2024</span>
         </div>
         <p class="cv-entry-org">Double Bay Whale Sanctuary · Hanson Island, BC</p>
+        <p class="cv-entry-desc">
+          Conducted marine conservation and science communication work in the territory of the Southern Resident Killer Whale and humpback whale populations of Johnstone Strait. Produced public-facing science materials on the history of whaling in British Columbia. Obtained boating licence and trained in safe vessel navigation around marine wildlife. Collaborated with Indigenous community partners and NGOs to support species protection and habitat awareness.
+        </p>
       </div>
 
       <div class="cv-entry">
         <div class="cv-entry-header">
-          <span class="cv-entry-title">Sales &amp; Customer Journey Manager</span>
-          <span class="cv-entry-date">April 2025 – Present</span>
+          <span class="cv-entry-title">Founder &amp; COO</span>
+          <span class="cv-entry-date">April 2015 – March 2018</span>
         </div>
-        <p class="cv-entry-org">Circles Coliving · Barcelona, Spain</p>
+        <p class="cv-entry-org">Backbone Vintage · Guelph, ON</p>
+        <p class="cv-entry-desc">
+          Founded and operated an environmentally conscious retail business promoting circular fashion as an alternative to fast fashion pollution.
+        </p>
       </div>
     </section>
 
@@ -195,7 +213,7 @@
 
       <div class="cv-entry">
         <div class="cv-entry-header">
-          <span class="cv-entry-title">Natural Sciences &amp; Engineering Research Council of Canada — Undergraduate Research Award (NSERC USRA)</span>
+          <span class="cv-entry-title">NSERC Undergraduate Student Research Award</span>
           <span class="cv-entry-date">2020</span>
         </div>
         <p class="cv-entry-org">Government of Canada</p>
@@ -244,62 +262,92 @@
     </section>
 
     <!-- ============================================================
-         6. SKILLS & METHODS
+         6. CAMPUS & COMMUNITY INVOLVEMENT
+         ============================================================ -->
+    <section class="cv-section" aria-labelledby="cv-campus">
+      <h2 class="cv-section-title" id="cv-campus">Campus &amp; Community Involvement</h2>
+
+      <div class="cv-entry">
+        <div class="cv-entry-header">
+          <span class="cv-entry-title">Executive Formals Commissioner</span>
+          <span class="cv-entry-date">2020 – 2021</span>
+        </div>
+        <p class="cv-entry-org">UC Literary and Athletic Society, University of Toronto</p>
+        <p class="cv-entry-desc">Led planning and execution of large-scale community events, managing budgets, external partnerships, and volunteer teams.</p>
+      </div>
+
+      <div class="cv-entry">
+        <div class="cv-entry-header">
+          <span class="cv-entry-title">Board of Directors</span>
+          <span class="cv-entry-date">2022 – 2023</span>
+        </div>
+        <p class="cv-entry-org">Campus Cooperative Student Housing, University of Toronto</p>
+        <p class="cv-entry-desc">Contributed to executive governance, fiscal planning, and community programming for an affordable student housing cooperative.</p>
+      </div>
+
+      <div class="cv-entry">
+        <div class="cv-entry-header">
+          <span class="cv-entry-title">Event Coordinator &amp; Mentorship Executive</span>
+          <span class="cv-entry-date">2019 – 2020</span>
+        </div>
+        <p class="cv-entry-org">University of Toronto Vegetarian &amp; Vegan Association</p>
+        <p class="cv-entry-desc">Planned and delivered programming, built partnerships with local restaurants, and coordinated student mentorship.</p>
+      </div>
+
+      <div class="cv-entry">
+        <div class="cv-entry-header">
+          <span class="cv-entry-title">RSG Study Group Leader</span>
+          <span class="cv-entry-date">2021</span>
+        </div>
+        <p class="cv-entry-org">University of Toronto Student Life</p>
+        <p class="cv-entry-desc">Facilitated weekly study sessions and served as a point of contact for enrolled students.</p>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         7. SKILLS & METHODS
          ============================================================ -->
     <section class="cv-section" aria-labelledby="cv-skills">
       <h2 class="cv-section-title" id="cv-skills">Skills &amp; Methods</h2>
 
       <div class="cv-entry">
-        <p class="cv-entry-org">Field &amp; Technical</p>
-        <p class="cv-entry-desc">Ecological field surveys, acoustic monitoring and data collection, boat-based transect surveys, remote live-camera footage analysis, photo identification, citizen science data collection. Canadian Boating Licence. Comfortable with difficult terrain, wading, and adverse field conditions.</p>
+        <p class="cv-entry-org">Bioacoustics &amp; Audio</p>
+        <p class="cv-entry-desc">Raven Lite, Audacity, R/seewave</p>
       </div>
 
       <div class="cv-entry">
-        <p class="cv-entry-org">Bioacoustics &amp; Spatial Analysis</p>
-        <p class="cv-entry-desc">Raven Pro/Lite (spectrogram annotation, acoustic feature extraction), Audacity, R/seewave; QGIS (spatial analysis, mapping, qgis2web export), MERMAID marine spatial platform; Google Earth Engine (SST/NDVI visualisation — in progress).</p>
+        <p class="cv-entry-org">Spatial Analysis &amp; Remote Sensing</p>
+        <p class="cv-entry-desc">QGIS, qgis2web, Google Earth Engine</p>
+      </div>
+
+      <div class="cv-entry">
+        <p class="cv-entry-org">Statistical Analysis &amp; Data</p>
+        <p class="cv-entry-desc">R/RStudio (ggplot2, tidyverse), Python, GBIF large dataset processing, MERMAID</p>
       </div>
 
       <div class="cv-entry">
         <p class="cv-entry-org">Genomics &amp; Bioinformatics</p>
-        <p class="cv-entry-desc">GWAS data quality control and analysis pipelines, polygenic risk score calculation, PAML molecular evolution analysis, CRISPR guide RNA design (wet lab), Next Generation Sequencing workflow development, PacBio long-read sequencing.</p>
+        <p class="cv-entry-desc">PAML, MEGA, Mr. Bayes, ClustalO, FigTree, NCBI &amp; Ensembl sequence acquisition, BLAST</p>
       </div>
 
       <div class="cv-entry">
-        <p class="cv-entry-org">Data &amp; Analysis</p>
-        <p class="cv-entry-desc">R/RStudio (ggplot2, tidyverse, seewave, large dataset processing), Python (bioacoustic feature extraction pipeline — in progress), MERMAID, PubMed, PsycINFO, Web of Science.</p>
+        <p class="cv-entry-org">Field Methods</p>
+        <p class="cv-entry-desc">Boat-based transect surveys, photo identification, systematic classification, acoustic monitoring, citizen science data collection, vessel navigation around marine wildlife</p>
+      </div>
+
+      <div class="cv-entry">
+        <p class="cv-entry-org">Science Communication</p>
+        <p class="cv-entry-desc">Scientific illustration, public science writing, stakeholder communication across NGOs, Indigenous community partners, and public audiences</p>
       </div>
 
       <div class="cv-entry">
         <p class="cv-entry-org">Languages</p>
-        <p class="cv-entry-desc">English (native), Spanish (B2), French (A2), Catalan (A1).</p>
+        <p class="cv-entry-desc">English (native), Spanish (B2), French (A2), Catalan (A1)</p>
       </div>
     </section>
 
-    <!-- ============================================================
-         7. PROFESSIONAL MEMBERSHIPS
-         ============================================================ -->
-    <section class="cv-section" aria-labelledby="cv-memberships">
-      <h2 class="cv-section-title" id="cv-memberships">Professional Memberships</h2>
-
-      <div class="cv-entry">
-        <div class="cv-entry-header">
-          <span class="cv-entry-title">Science Writers in Canada (SWIC)</span>
-          <span class="cv-entry-date">Member</span>
-        </div>
-      </div>
-
-      <!-- TODO: Add Massive Science Consortium membership once joined ($15) -->
-      <div class="cv-entry">
-        <div class="cv-entry-header">
-          <span class="cv-entry-title">Massive Science Consortium</span>
-          <span class="cv-entry-date"><!-- TODO: Add year --></span>
-        </div>
-        <!-- TODO: Remove this comment once joined -->
-      </div>
-    </section>
-
-    <p style="font-size:0.85rem;color:var(--color-text-muted);font-style:italic;margin-top:var(--space-4);">
-      References available upon request.
+    <p style="font-size:0.85rem;color:var(--color-text-muted);font-style:italic;margin-top:var(--space-6);">
+      Full CV and references available upon request.
     </p>
 
   </main>
@@ -311,8 +359,8 @@
       <nav class="footer-links" aria-label="Footer links">
         <a href="mailto:teaganksmith@gmail.com">teaganksmith@gmail.com</a>
         <a href="https://orcid.org/" target="_blank" rel="noopener noreferrer">ORCID</a>
-        <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        <a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/teagan-keely-smith-970066185/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://github.com/teaganksmith?tab=repositories" target="_blank" rel="noopener noreferrer">GitHub</a>
         <a href="https://substack.com/" target="_blank" rel="noopener noreferrer">Substack</a>
       </nav>
     </div>

@@ -100,90 +100,6 @@
         </p>
       </div>
 
-      <!-- Map placeholder -->
-      <div class="project-section">
-        <p class="project-section-label">Spatial Data — Study Area</p>
-
-        <!-- TODO: Replace with real QGIS-exported map image (min 1500px wide, WebP format with JPEG fallback).
-             Include: legend, scale bar, north arrow. Caption below describes key spatial features. -->
-        <div class="placeholder-map" role="img" aria-label="Map placeholder: Hudson Bay study area showing survey transects, whale sighting locations, and vessel traffic routes near Churchill, MB">
-          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" aria-hidden="true">
-            <rect x="2" y="2" width="36" height="36" rx="4" stroke="var(--color-border)" stroke-width="1.5"/>
-            <path d="M8 20 L16 12 L24 18 L32 10" stroke="var(--color-accent)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-            <circle cx="16" cy="12" r="2.5" fill="var(--color-accent-warm)"/>
-            <circle cx="24" cy="18" r="2.5" fill="var(--color-accent-warm)"/>
-          </svg>
-          <span>
-            [QGIS Map: Churchill River study area · Churchill, MB · August 2023]<br>
-            <span style="font-size:0.8rem;">Survey transects overlaid on bathymetry · Beluga sighting locations · Vessel traffic corridors<br>
-            <!-- TODO: Upload to /images/research/cetacean-hudson-bay-map.webp —
-                 Export from QGIS at 300dpi, min 1500px width. Include legend, scale bar, north arrow.
-                 For interactive version: export via qgis2web to /research/cetacean-bioacoustics/map/ and embed via iframe below. -->
-            </span>
-          </span>
-        </div>
-
-        <!-- TODO: Once qgis2web export is available, replace comment below with iframe:
-        <iframe src="map/" width="100%" height="500" style="border:0.5px solid var(--color-border);border-radius:var(--radius-card);margin-top:var(--space-2);" title="Interactive map: Hudson Bay cetacean survey area" loading="lazy"></iframe>
-        <a href="map/" class="text-sm text-accent mt-2" style="display:inline-block;margin-top:var(--space-2);">View full interactive map →</a>
-        -->
-
-        <p style="font-size:0.8rem;color:var(--color-text-muted);margin-top:var(--space-2);font-style:italic;line-height:1.6;">
-          <!-- TODO: Replace with real map caption once map is produced. Format: [Location, Date, 1-sentence context] -->
-          [Map caption: Hudson Bay, Churchill, MB, July–August 2023. Survey transect routes and beluga sighting events plotted against bathymetric contours and vessel traffic corridors during peak migration season.]
-        </p>
-      </div>
-
-      <!-- Spectrograms & Audio -->
-      <div class="project-section">
-        <p class="project-section-label">Acoustic Data</p>
-
-        <!-- TODO: Replace placeholder with real annotated spectrogram PNG and matching audio clip.
-             Spectrogram should be annotated: mark coda types, frequency ranges, inter-click intervals.
-             Audio clip: 10–30 seconds, MP3 + OGG formats in /audio/ directory. -->
-
-        <div class="placeholder-spectrogram" role="img"
-          aria-label="Spectrogram placeholder: beluga whale vocalisation — annotated PNG showing frequency range and temporal structure">
-          <span style="position:relative;z-index:1;font-style:italic;font-size:0.85rem;">
-            [Spectrogram: Beluga whale vocalisations · Churchill, MB · July 2023]<br>
-            <span style="font-size:0.75rem;opacity:0.7;">Frequency range: 0–20 kHz · Key features: tonal whistles, click trains<br>
-            <!-- TODO: Export from Raven Lite/Pro as annotated PNG. Min 1500px wide. Upload to /images/research/spectrogram-beluga-01.png -->
-            </span>
-          </span>
-        </div>
-
-        <div class="audio-player-wrapper" style="margin-top:var(--space-3);">
-          <p class="audio-label">
-            <!-- TODO: Replace with real audio metadata -->
-            🔊 Audio: [Beluga whale vocalisations — Churchill, MB, July 2023 — 0–20 kHz]
-          </p>
-          <!-- TODO: Replace src values with real audio file paths.
-               Provide both MP3 and OGG formats for browser compatibility.
-               Keep clips 10–30 seconds. -->
-          <audio controls aria-label="Beluga whale vocalisation recording, Churchill, Manitoba, July 2023">
-            <source src="../../audio/beluga-vocalisations-placeholder.ogg" type="audio/ogg" />
-            <source src="../../audio/beluga-vocalisations-placeholder.mp3" type="audio/mpeg" />
-            Your browser does not support the audio element. <a href="../../audio/beluga-vocalisations-placeholder.mp3">Download audio clip</a>.
-          </audio>
-          <p style="font-size:0.75rem;color:var(--color-text-muted);font-style:italic;margin-top:4px;">
-            <!-- TODO: Add transcript or caption description for accessibility -->
-            [Audio description: A 15-second recording of beluga whale whistles and click trains recorded at Hudson Bay. Dominant frequencies 4–12 kHz. Recording conditions: calm sea state, 40m vessel offset.]
-          </p>
-        </div>
-
-        <!-- Second spectrogram slot for sperm whale codas (summer 2025 deliverable) -->
-        <!-- TODO: Add annotated sperm whale spectrogram once Raven Lite analysis is complete.
-             Target: minimum 3 codas identified. Upload to /images/research/spectrogram-sperm-whale-01.png -->
-        <div class="placeholder-spectrogram" style="margin-top:var(--space-3);" role="img"
-          aria-label="Spectrogram placeholder: sperm whale codas — annotated PNG showing minimum 3 identified coda patterns">
-          <span style="position:relative;z-index:1;font-style:italic;font-size:0.85rem;">
-            [Spectrogram: Sperm whale codas — analysis in progress]<br>
-            <span style="font-size:0.75rem;opacity:0.7;">Target: ≥3 codas identified · Raven Lite analysis · Summer 2025<br>
-            <!-- TODO: Upload annotated PNG once analysis is complete -->
-            </span>
-          </span>
-        </div>
-      </div>
 
       <!-- Key Findings -->
       <div class="project-section">
@@ -193,46 +109,6 @@
         </p>
       </div>
 
-      <!-- Field Photos -->
-      <div class="project-section">
-        <p class="project-section-label">Field Documentation</p>
-        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:var(--space-2);">
-
-          <!-- TODO: Replace each placeholder with real field photograph (WebP, min 1200px wide).
-               Caption format: [Location, Date, 1-sentence context] -->
-
-          <figure>
-            <div class="art-placeholder" style="min-height:200px;border-radius:4px;border:0.5px solid var(--color-border);"
-              aria-label="Field photo placeholder: beluga pod observation, Hudson Bay, Churchill, 2023">
-              [Field photo: beluga pod observation]
-            </div>
-            <figcaption style="font-size:0.78rem;color:var(--color-text-muted);margin-top:6px;font-style:italic;">
-              Churchill, MB, July 2023. [1-sentence context]
-            </figcaption>
-          </figure>
-
-          <figure>
-            <div class="art-placeholder" style="min-height:200px;border-radius:4px;border:0.5px solid var(--color-border);"
-              aria-label="Field photo placeholder: acoustic monitoring equipment setup, Hudson Bay">
-              [Field photo: acoustic monitoring setup]
-            </div>
-            <figcaption style="font-size:0.78rem;color:var(--color-text-muted);margin-top:6px;font-style:italic;">
-              Churchill, MB, August 2023. [1-sentence context]
-            </figcaption>
-          </figure>
-
-          <figure>
-            <div class="art-placeholder" style="min-height:200px;border-radius:4px;border:0.5px solid var(--color-border);"
-              aria-label="Field photo placeholder: Arctic field ecology landscape, Hudson Bay tundra">
-              [Field photo: Hudson Bay landscape]
-            </div>
-            <figcaption style="font-size:0.78rem;color:var(--color-text-muted);margin-top:6px;font-style:italic;">
-              Churchill, MB, July 2023. [1-sentence context]
-            </figcaption>
-          </figure>
-
-        </div>
-      </div>
 
       <!-- GitHub -->
       <div class="project-section">
@@ -249,7 +125,7 @@
       <!-- Bottom nav -->
       <div style="margin-top:var(--space-8);padding-top:var(--space-4);border-top:0.5px solid var(--color-border);display:flex;gap:var(--space-3);flex-wrap:wrap;">
         <a href="../../research/" class="btn btn-secondary btn-sm">← All research</a>
-        <a href="/research/spatial-ecology/" class="btn btn-secondary btn-sm">Next project →</a>
+        <a href="../spatial-ecology/" class="btn btn-secondary btn-sm">Next project →</a>
       </div>
 
     </div>

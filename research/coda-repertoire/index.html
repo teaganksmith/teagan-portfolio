@@ -195,9 +195,48 @@
       </div>
 
       <div class="project-section">
+        <p class="project-section-label">What This Means</p>
+        <p style="line-height:1.75;">
+          <strong>Sperm whales appear to have something like a vocabulary, and the question is how sharply its
+          entries are separated.</strong> A coda is a short drum-roll of clicks, and what distinguishes one from
+          another is the rhythm rather than the sound. Families and clans share rhythms, so a coda repertoire
+          works partly as a badge of belonging. Whether those rhythms fall into clean categories, the way the
+          sounds of a spoken language do, or blend continuously into one another, changes what kind of
+          communication system this is.
+        </p>
+        <p style="line-height:1.75;margin-top:var(--space-2);">
+          <strong>With simple tools, the categories are mostly not there to be found.</strong> Nine of the ten
+          groups tested here show structure under one method and none under a second, more cautious one. Only
+          codas of four clicks give an answer both methods accept. That does not overturn the published result,
+          which used richer methods and knew what the whales were doing at the time. It shows how much of that
+          published structure depends on the sophistication of the method, and how easily a straightforward
+          clustering algorithm will carve a smooth continuum into tidy-looking groups when asked to.
+        </p>
+        <p style="line-height:1.75;margin-top:var(--space-2);">
+          <strong>The most instructive result is one that was thrown away.</strong> The strongest statistical
+          signal in the entire analysis came from three recordings out of eighty-nine, each with one unusually
+          long pause near the end. A significance test cannot see that; it reports a small, confident number
+          either way. Plotting the groups makes it obvious in seconds. For anyone building datasets that
+          machine-learning systems will later train on, this is the practical lesson: a label is only as good as
+          the look someone took at it.
+        </p>
+      </div>
+
+      <div class="project-section">
         <p class="project-section-label">Reproducibility and Annotation</p>
         <p style="line-height:1.75;">
           A verification script rebuilds the full results table from the corpus. All ten click-count classes reproduce exactly, together with the corpus accounting and the interval count. The repository also includes an annotation protocol written for onboarding a second annotator, a stratified twenty-file review bundle with pre-drawn Raven selection tables, and a scoring script that computes detector precision, recall and timing error against human-reviewed labels. Half the bundle consists of files where the pipeline had to merge echoes, which are the cases where a human and an automated detector are most likely to disagree.
+        </p>
+      </div>
+
+      <div class="project-section">
+        <p class="project-section-label">Tooling and Provenance</p>
+        <p style="line-height:1.75;">
+          This project was built with AI assistance. The framing, the methodological choices and the decision to
+          report a largely negative result are mine. An adversarial review pass, run against the primary
+          literature, corrected the study's framing from a novel question to a replication, imposed the
+          compositional correction on the clustering geometry, and identified a preprocessing artefact that is
+          disclosed above rather than quietly removed.
         </p>
       </div>
 

@@ -4,6 +4,16 @@
   <!-- TODO: Replace teagankeelysmith.com with your actual domain throughout -->
 
   <url>
+    <loc>https://teagankeelysmith.com/research/flight-call-contagion/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://teagankeelysmith.com/research/coda-repertoire/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
     <loc>https://teagankeelysmith.com/</loc>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>

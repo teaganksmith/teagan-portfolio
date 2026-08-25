@@ -1,86 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  <!-- TODO: Replace teagankeelysmith.com with your actual domain throughout -->
 
   <url>
-    <loc>https://teagankeelysmith.com/research/flight-call-contagion/</loc>
+    <loc>https://teaganksmith.github.io/teagan-portfolio/research/flight-call-contagion/</loc>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://teagankeelysmith.com/research/coda-repertoire/</loc>
+    <loc>https://teaganksmith.github.io/teagan-portfolio/research/coda-repertoire/</loc>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://teagankeelysmith.com/</loc>
+    <loc>https://teaganksmith.github.io/teagan-portfolio/</loc>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
 
   <url>
-    <loc>https://teagankeelysmith.com/writing/</loc>
+    <loc>https://teaganksmith.github.io/teagan-portfolio/writing/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://teagankeelysmith.com/research/</loc>
+    <loc>https://teaganksmith.github.io/teagan-portfolio/research/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://teagankeelysmith.com/research/cetacean-bioacoustics/</loc>
+    <loc>https://teaganksmith.github.io/teagan-portfolio/research/cetacean-bioacoustics/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://teagankeelysmith.com/research/spatial-ecology/</loc>
+    <loc>https://teaganksmith.github.io/teagan-portfolio/research/spatial-ecology/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://teagankeelysmith.com/research/future-msc/</loc>
+    <loc>https://teaganksmith.github.io/teagan-portfolio/research/future-msc/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://teagankeelysmith.com/art/</loc>
+    <loc>https://teaganksmith.github.io/teagan-portfolio/art/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://teagankeelysmith.com/about/</loc>
+    <loc>https://teaganksmith.github.io/teagan-portfolio/about/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://teagankeelysmith.com/cv/</loc>
+    <loc>https://teaganksmith.github.io/teagan-portfolio/cv/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://teagankeelysmith.com/contact/</loc>
+    <loc>https://teaganksmith.github.io/teagan-portfolio/contact/</loc>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
-    <loc>https://teagankeelysmith.com/research/cetacean-occurrence/</loc>
+    <loc>https://teaganksmith.github.io/teagan-portfolio/research/cetacean-occurrence/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://teagankeelysmith.com/art/fishie/</loc>
+    <loc>https://teaganksmith.github.io/teagan-portfolio/art/fishie/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

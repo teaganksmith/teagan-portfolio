@@ -1,5 +1,4 @@
 # robots.txt — Teagan Keely Smith Portfolio
-# TODO: Replace teagankeelysmith.com with your actual domain
 
 User-agent: *
 Allow: /
@@ -10,4 +9,4 @@ Allow: /audio/
 # Disallow any potential build/admin directories
 Disallow: /.git/
 
-Sitemap: https://teagankeelysmith.com/sitemap.xml
+Sitemap: https://teaganksmith.github.io/teagan-portfolio/sitemap.xml

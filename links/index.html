@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Teagan Smith</title>
+<meta name="description" content="Teagan Smith. Founder of Spectral, cofounder of Accendra, writer of the Interspecies newsletter.">
+<meta property="og:title" content="Teagan Smith">
+<meta property="og:description" content="Founder of Spectral, cofounder of Accendra. I write Interspecies, a weekly newsletter on decoding animal language.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #161513;
+    --cream: #ece7dd;
+    --cream-deep: #e3ddd0;
+    --paper: #f6f3ec;
+    --line: #cfc8b9;
+    --red: #c1121f;
+    --serif: "Lora", Georgia, serif;
+    --mono: "IBM Plex Mono", "Courier New", monospace;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    background: var(--cream);
+    color: var(--ink);
+    font-family: var(--serif);
+    line-height: 1.5;
+    min-height: 100vh;
+  }
+  a { color: inherit; text-decoration: none; }
+
+  .sheet {
+    max-width: 480px;
+    margin: 0 auto;
+    min-height: 100vh;
+    background: var(--cream);
+    box-shadow: 0 0 0 1px var(--line);
+  }
+
+  /* ---------- hero ---------- */
+  .hero {
+    background: var(--ink);
+    color: var(--cream);
+    text-align: center;
+    padding: 56px 28px 64px;
+    position: relative;
+  }
+  .hero .kicker {
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.34em;
+    text-transform: uppercase;
+    color: rgba(236, 231, 221, 0.55);
+    margin-bottom: 30px;
+  }
+  .portrait {
+    width: 116px;
+    height: 116px;
+    object-fit: cover;
+    filter: grayscale(1) contrast(1.06);
+    border: 1px solid rgba(236, 231, 221, 0.35);
+    padding: 5px;
+    display: block;
+    margin: 0 auto 26px;
+  }
+  .hero h1 {
+    font-weight: 500;
+    font-size: 36px;
+    letter-spacing: 0.01em;
+    line-height: 1.15;
+  }
+  .rule {
+    width: 30px;
+    height: 2px;
+    background: var(--red);
+    margin: 18px auto;
+  }
+  .bio {
+    font-style: italic;
+    font-size: 16.5px;
+    line-height: 1.65;
+    color: rgba(236, 231, 221, 0.82);
+    max-width: 340px;
+    margin: 0 auto 28px;
+  }
+  .bubbles { display: flex; justify-content: center; gap: 12px; }
+  .bubble {
+    width: 42px;
+    height: 42px;
+    border: 1px solid rgba(236, 231, 221, 0.45);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.22s ease, border-color 0.22s ease;
+  }
+  .bubble svg { width: 17px; height: 17px; fill: var(--cream); transition: fill 0.22s ease; }
+  .bubble:hover { background: var(--red); border-color: var(--red); }
+
+  /* ---------- links ---------- */
+  .links {
+    padding: 46px 28px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  .btn {
+    display: block;
+    text-align: center;
+    border: 1.5px solid var(--ink);
+    padding: 19px 16px 17px;
+    font-family: var(--mono);
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    background: transparent;
+    transition: background 0.22s ease, color 0.22s ease, border-color 0.22s ease;
+  }
+  .btn:hover { background: var(--ink); color: var(--cream); }
+  .btn.lead { background: var(--ink); color: var(--cream); position: relative; }
+  .btn.lead:hover { background: var(--red); border-color: var(--red); }
+  .btn.lead .tag {
+    position: absolute;
+    top: -9px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--red);
+    color: var(--paper);
+    font-size: 9px;
+    letter-spacing: 0.28em;
+    padding: 3px 10px 2px 12px;
+  }
+
+  /* ---------- latest ---------- */
+  .latest { padding: 44px 28px 20px; }
+  .section-label {
+    font-family: var(--mono);
+    font-size: 10.5px;
+    font-weight: 500;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+  }
+  .section-label::before { content: ""; width: 7px; height: 7px; background: var(--red); }
+  .edition {
+    display: block;
+    padding: 18px 0 16px;
+    border-bottom: 1px solid var(--line);
+  }
+  .edition:first-of-type { border-top: 1px solid var(--line); margin-top: 12px; }
+  .edition .date {
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+    color: #8a8272;
+    display: block;
+    margin-bottom: 5px;
+  }
+  .edition .title {
+    font-size: 17.5px;
+    font-weight: 500;
+    line-height: 1.4;
+    transition: color 0.2s ease;
+  }
+  .edition:hover .title { color: var(--red); }
+
+  /* ---------- footer ---------- */
+  footer {
+    text-align: center;
+    padding: 34px 28px 42px;
+    font-family: var(--mono);
+    font-size: 9.5px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: #8a8272;
+  }
+
+  /* ---------- entrance ---------- */
+  @media (prefers-reduced-motion: no-preference) {
+    .rise { opacity: 0; transform: translateY(14px); animation: rise 0.7s cubic-bezier(0.22, 0.61, 0.36, 1) forwards; }
+    @keyframes rise { to { opacity: 1; transform: none; } }
+    .d1 { animation-delay: 0.05s; } .d2 { animation-delay: 0.13s; }
+    .d3 { animation-delay: 0.21s; } .d4 { animation-delay: 0.29s; }
+    .d5 { animation-delay: 0.37s; } .d6 { animation-delay: 0.45s; }
+    .d7 { animation-delay: 0.55s; } .d8 { animation-delay: 0.65s; }
+  }
+</style>
+</head>
+<body>
+<div class="sheet">
+
+  <header class="hero">
+    <p class="kicker rise d1">Science, visualized</p>
+    <img class="portrait rise d2" src="../Profile%20Photo_2026.png" alt="Portrait of Teagan Smith">
+    <h1 class="rise d3">Teagan Smith</h1>
+    <div class="rule rise d3"></div>
+    <p class="bio rise d4">Founder of Spectral, cofounder of Accendra. I write Interspecies, a weekly newsletter on decoding animal language.</p>
+    <div class="bubbles rise d5">
+      <a class="bubble" href="https://www.linkedin.com/in/teagan-keely-smith-970066185/" aria-label="Teagan Smith on LinkedIn">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.24 8.31h4.52V23H.24V8.31zM8.34 8.31h4.33v2h.06c.6-1.14 2.08-2.34 4.28-2.34 4.57 0 5.42 3.01 5.42 6.92V23h-4.52v-7.12c0-1.7-.03-3.88-2.36-3.88-2.37 0-2.73 1.85-2.73 3.76V23H8.34V8.31z"/></svg>
+      </a>
+    </div>
+  </header>
+
+  <nav class="links">
+    <a class="btn lead rise d6" href="https://spectralsite.vercel.app"><span class="tag">Waitlist open</span>Spectral</a>
+    <a class="btn rise d6" href="https://www.linkedin.com/newsletters/7473099872217509888/">Interspecies newsletter</a>
+    <a class="btn rise d7" href="https://accendra.io">Accendra</a>
+  </nav>
+
+  <section class="latest rise d8">
+    <h2 class="section-label">Latest from Interspecies</h2>
+    <a class="edition" href="https://www.linkedin.com/pulse/what-bonobo-means-when-peeps-before-whistles-teagan-keely-smith-xjhwc">
+      <span class="date">Aug 24, 2026</span>
+      <span class="title">What a bonobo means when it peeps before it whistles</span>
+    </a>
+    <a class="edition" href="https://www.linkedin.com/pulse/who-owns-whales-voice-teagan-keely-smith-dv1nc">
+      <span class="date">Aug 10, 2026</span>
+      <span class="title">Who owns a whale's voice?</span>
+    </a>
+    <a class="edition" href="https://www.linkedin.com/pulse/ai-built-speak-whale-acoustically-teagan-keely-smith-uwfmc">
+      <span class="date">Jul 24, 2026</span>
+      <span class="title">The AI built to speak whale, acoustically</span>
+    </a>
+  </section>
+
+  <footer>Teagan Smith &middot; 2026</footer>
+
+</div>
+</body>
+</html>

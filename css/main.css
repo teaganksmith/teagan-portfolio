@@ -2279,3 +2279,11 @@ audio {
   background: var(--color-accent);
   color: var(--color-on-accent);
 }
+
+/* Research feed covers: plots stay whole on a white ground */
+.research-cover-img {
+  object-fit: contain;
+  background: #FFFFFF;
+  padding: 10px;
+  border-bottom: 0.5px solid var(--color-border);
+}

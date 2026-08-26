@@ -26,7 +26,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
 
   <!-- Styles -->
-  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/main.css?v=2" />
 </head>
 <body>
 
@@ -77,8 +77,6 @@
     <section class="hero" aria-labelledby="hero-headline">
       <div class="hero-inner">
         <div class="hero-content">
-          <p class="hero-eyebrow">Researcher · Science Communicator</p>
-
           <h1 class="hero-headline" id="hero-headline">
             Science that<br>
             listens to the<br>
@@ -86,21 +84,44 @@
           </h1>
 
           <p class="hero-sub">
-            I'm a science writer with two closely linked interests: the science of animal consciousness and language, and the conservation and policy implications of what that science reveals. From a background in comparative physiology and field research with whales, I write about what we're learning about non-human minds, and what we're obligated to do with that knowledge.
+            I'm a science writer with two closely linked interests: the science of animal consciousness and language, and the conservation and policy implications of what that science reveals. I'm also the founder of Spectral, a science visualization studio, and the cofounder of Accendra. From a background in comparative physiology and field research with whales, I write about what we're learning about non-human minds, and what we're obligated to do with that knowledge.
           </p>
 
           <div class="btn-group">
             <a href="./writing/" class="btn btn-primary">Read my work</a>
             <a href="./contact/" class="btn btn-secondary">Get in touch</a>
+            <a href="https://www.linkedin.com/in/teagan-keely-smith-970066185/" target="_blank" rel="noopener noreferrer" class="hero-linkedin" aria-label="Teagan Keely Smith on LinkedIn">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/>
+              </svg>
+            </a>
           </div>
         </div>
 
-        <div class="hero-visual" aria-hidden="true" style="display:flex;align-items:center;justify-content:center;">
-          <img
-            src="Profile Photo_2026.png"
-            alt="Teagan Keely Smith"
-            style="width:340px;height:340px;border-radius:50%;object-fit:cover;object-position:center top;"
-          />
+      </div>
+
+      <!-- Conference badge on a lanyard: swoops in from the top right -->
+      <div class="lanyard">
+        <div class="lanyard-swing">
+          <div class="lanyard-strap" aria-hidden="true">
+            <span>Teagan Keely Smith&nbsp;&nbsp;·&nbsp;&nbsp;Interspecies&nbsp;&nbsp;·&nbsp;&nbsp;Teagan Keely Smith&nbsp;&nbsp;·&nbsp;&nbsp;Interspecies&nbsp;&nbsp;·&nbsp;&nbsp;Teagan Keely Smith&nbsp;&nbsp;·&nbsp;&nbsp;Interspecies</span>
+          </div>
+          <div class="badge-swing">
+            <svg class="lanyard-clasp" width="44" height="60" viewBox="0 0 44 60" aria-hidden="true">
+              <!-- Metal ring joins the strap; black clip matches strap and slot -->
+              <circle cx="22" cy="10" r="7.5" fill="none" stroke="#9B9791" stroke-width="3"/>
+              <path d="M22 17.5 L22 24" stroke="#9B9791" stroke-width="3" stroke-linecap="round"/>
+              <path d="M13 24 h18 a4 4 0 0 1 4 4 v8 a4 4 0 0 1 -4 4 h-18 a4 4 0 0 1 -4 -4 v-8 a4 4 0 0 1 4 -4 Z" fill="#16140F"/>
+              <path d="M17 30 h10" stroke="#3A362E" stroke-width="1.6" stroke-linecap="round"/>
+              <rect x="16" y="40" width="12" height="19" rx="2.5" fill="#16140F"/>
+            </svg>
+            <div class="badge-card">
+              <span class="badge-slot" aria-hidden="true"></span>
+              <img src="images/profile-badge.jpg" alt="Teagan Keely Smith" />
+              <p class="badge-name">Teagan Keely Smith</p>
+              <span class="badge-rule" aria-hidden="true"></span>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -118,45 +139,53 @@
 
           <!-- Card 1: Writing -->
           <article class="featured-card">
-            <div class="featured-card-category">
-              <span class="pill pill-accent">Writing</span>
+            <img class="featured-card-cover" src="images/writing/who-owns-a-whales-voice.jpg" alt="" loading="lazy" />
+            <div class="featured-card-body">
+              <div class="featured-card-category">
+                <span class="pill pill-accent">Writing</span>
+              </div>
+              <h3 class="featured-card-title">
+                Who owns a whale's voice?
+              </h3>
+              <p class="featured-card-desc">
+                A global survey asked 1,057 people across sixty-seven countries who should own the recording of a whale's song. Four in ten said the conservation community; nearly one in five said the whale. The courts are about to face the same question.
+              </p>
+              <a href="https://www.linkedin.com/pulse/who-owns-whales-voice-teagan-keely-smith-dv1nc" target="_blank" rel="noopener noreferrer" class="featured-card-link" aria-label="Read this writing piece">Read →</a>
             </div>
-            <h3 class="featured-card-title">
-              Who owns a whale's voice?
-            </h3>
-            <p class="featured-card-desc">
-              A global survey asked 1,057 people across sixty-seven countries who should own the recording of a whale's song. Four in ten said the conservation community; nearly one in five said the whale. The courts are about to face the same question.
-            </p>
-            <a href="https://www.linkedin.com/pulse/who-owns-whales-voice-teagan-keely-smith-dv1nc" target="_blank" rel="noopener noreferrer" class="featured-card-link" aria-label="Read this writing piece">Read →</a>
           </article>
 
           <!-- Card 2: Research -->
           <article class="featured-card">
-            <div class="featured-card-category">
-              <span class="pill" style="background:var(--color-amber-bg);color:var(--color-amber-text);">Research</span>
+            <img class="featured-card-cover" src="images/research/spermwhale-overlay-map.jpg" alt="" loading="lazy" />
+            <div class="featured-card-body">
+              <div class="featured-card-category">
+                <span class="pill pill-status-progress">Research</span>
+              </div>
+              <h3 class="featured-card-title">
+                Sperm Whale Foraging Habitat and Deep-Sea Mining Acoustic Risk, North Atlantic
+              </h3>
+              <p class="featured-card-desc">
+                Species distribution modelling of sperm whale foraging habitat across the North Atlantic from 71,104 GBIF occurrence records, overlaid with ISA deep-sea mining exploration contracts and published acoustic impact zones.
+              </p>
+              <a href="research/cetacean-occurrence/" class="featured-card-link" aria-label="View this research project">View project →</a>
             </div>
-            <h3 class="featured-card-title">
-              Sperm Whale Foraging Habitat and Deep-Sea Mining Acoustic Risk, North Atlantic
-            </h3>
-            <p class="featured-card-desc">
-              Species distribution modelling of sperm whale foraging habitat across the North Atlantic from 71,104 GBIF occurrence records, overlaid with ISA deep-sea mining exploration contracts and published acoustic impact zones.
-            </p>
-            <a href="research/cetacean-occurrence/" class="featured-card-link" aria-label="View this research project">View project →</a>
           </article>
 
           <!-- Card 3: Art -->
           <article class="featured-card">
-            <div class="featured-card-category">
-              <span class="pill pill-warm">Art</span>
+            <img class="featured-card-cover" src="art/images/digital%20painting/fish.JPG" alt="Fish, digital painting: a deep-sea anglerfish rendered against dark water." loading="lazy" />
+            <div class="featured-card-body">
+              <div class="featured-card-category">
+                <span class="pill pill-warm">Art</span>
+              </div>
+              <h3 class="featured-card-title">
+                Fish · Digital painting
+              </h3>
+              <p class="featured-card-desc">
+                From a body of work about ecological loss and the strange beauty of what lives underwater. Original works and prints are in the Etsy shop.
+              </p>
+              <a href="./art/" class="featured-card-link" aria-label="See the art gallery">See the gallery →</a>
             </div>
-            <h3 class="featured-card-title" style="font-size:1rem;">
-              Fishie · Browser game
-            </h3>
-            <img src="images/art/fishie-gameplay.jpg" alt="Gameplay from Fishie: a tiny hatchling swimming through the sunlit shallows, past drifting comb jellies and a coral seabed." style="width:100%;height:240px;object-fit:cover;object-position:center 40%;border-radius:4px;margin-bottom:var(--space-2);display:block;" loading="lazy">
-            <p class="featured-card-desc">
-              A side-scrolling underwater metroidvania where you climb the tree of life by eating what tried to eat you. Work in progress, playable in the browser.
-            </p>
-            <a href="./art/fishie/" class="featured-card-link" aria-label="Play Fishie">Play it →</a>
           </article>
 
         </div>
@@ -184,5 +213,6 @@
   </footer>
 
   <script src="js/nav.js" defer></script>
+  <script src="js/cursor.js" defer></script>
 </body>
 </html>

@@ -18,14 +18,14 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
 
-<link rel="stylesheet" href="../css/main.css" />
+<link rel="stylesheet" href="../css/main.css?v=2" />
 
   <style>
-    /* Gallery-specific overrides */
+    /* Gallery: one work per screen — take your time with each */
     .masonry-grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: var(--space-2);
+      grid-template-columns: 1fr;
+      gap: clamp(64px, 12vh, 128px);
       align-items: start;
     }
     .masonry-item {
@@ -50,11 +50,7 @@
       display: block;
     }
     @media (max-width: 700px) {
-      .masonry-grid { grid-template-columns: repeat(2, 1fr); }
-      .masonry-item-lg { grid-row: span 1; }
-    }
-    @media (max-width: 480px) {
-      .masonry-grid { grid-template-columns: 1fr; }
+      .masonry-grid { gap: var(--space-6); }
     }
     /* Hover caption overlay */
     .masonry-item {
@@ -132,60 +128,49 @@
   </nav>
 
   <main>
-    <header class="page-header">
-      <div class="page-header-inner">
+    <div class="split-layout">
+
+      <!-- ============================================================
+           LEFT: TITLE + STATEMENT + FILTERS (sticky)
+           ============================================================ -->
+      <aside class="split-side">
         <h1 class="page-h1">Art</h1>
-      </div>
-    </header>
 
-    <div class="container">
+        <div class="split-side-desc prose">
+          <p>
+            I make oil paintings and biological illustrations that grow out of the same questions my research asks: about the sublime, about ecological relationship and loss, and about what it means to pay close attention to the living world at a moment when so much of it is disappearing.
+          </p>
+          <p>
+            The oil paintings are concerned with climate grief. I am interested in the macabre register of the sublime, the awe and fear of nature as something far more powerful than us. The biological illustrations work differently, attending to form, texture, and the logic of an organism's structure.
+          </p>
+          <p>
+            I want this work to make you feel something you have been avoiding. Looking directly at it, holding both the grief and the possibility of doing something, is exactly the antidote to the apathy that follows fear.
+          </p>
+        </div>
+
+        <div class="split-filter-group">
+          <p class="split-filter-label">Filter by medium</p>
+          <div class="art-filters filter-bar" id="art-filter" role="group" aria-label="Filter artwork by theme">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="oil-paintings">Oil Paintings</button>
+            <button class="filter-btn" data-filter="biological-illustration">Biological Illustration</button>
+            <button class="filter-btn" data-filter="digital-painting">Digital Painting</button>
+          </div>
+        </div>
+
+        <div class="split-side-note">
+          <p style="font-size:0.85rem;color:var(--color-text-muted);margin-bottom:var(--space-2);">Original works &amp; prints available to purchase. Process, studies &amp; new work on Instagram.</p>
+          <div style="display:flex;flex-direction:column;gap:var(--space-1);align-items:flex-start;">
+            <a href="https://www.etsy.com/shop/TheDarkNaturalist" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Shop on Etsy →</a>
+            <a href="https://www.instagram.com/teaganksmith.art/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">Follow on Instagram →</a>
+          </div>
+        </div>
+      </aside>
 
       <!-- ============================================================
-           ARTIST STATEMENT
+           RIGHT: GALLERY
            ============================================================ -->
-      <div class="artist-statement prose">
-        <p>
-          I make oil paintings and biological illustrations that grow out of the same questions my research asks: about the sublime, about ecological relationship and loss, and about what it means to pay close attention to the living world at a moment when so much of it is disappearing.
-        </p>
-        <p>
-          The oil paintings are concerned with climate grief. I am interested in the macabre register of the sublime, the awe and fear of nature as something far more powerful than us, especially now, as worsening disasters make that power impossible to ignore. The biological illustrations work differently, attending to form, texture, and the logic of an organism's structure. Paying close attention to nature's intricate beauty and design.
-        </p>
-        <p>
-          I want this work to make you feel something you have been avoiding. Most of us grew up knowing the world was changing, felt the pull to help, and then watched adulthood quietly absorb that impulse into obligation and distance. I think looking directly at it, holding both the grief and the possibility of doing something, is exactly the antidote to the apathy that follows fear.
-        </p>
-        <p>
-          Original works and prints are in my Etsy shop. Process, studies, and new work on Instagram.
-        </p>
-      </div>
-
-      <!-- Etsy + Instagram callout -->
-      <div style="display:flex;gap:var(--space-3);flex-wrap:wrap;margin-bottom:var(--space-8);padding:var(--space-4);background:var(--color-bg-secondary);border-radius:var(--radius-card);border:0.5px solid var(--color-border);align-items:center;">
-        <div style="flex:1;min-width:200px;">
-          <p style="font-size:0.85rem;color:var(--color-text-muted);margin-bottom:var(--space-2);">Original works &amp; prints available to purchase</p>
-          <a href="https://www.etsy.com/shop/TheDarkNaturalist" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm" style="display:inline-flex;align-items:center;gap:6px;">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M11.5 2C6.25 2 2 6.25 2 11.5S6.25 21 11.5 21 21 16.75 21 11.5 16.75 2 11.5 2zm4.06 6.54l-.74.04c-.51.03-.64.15-.64.69v1.77h1.38l-.18 1.54H14.2v4.88h-2v-4.88h-.93v-1.54h.93V9.12c0-1.39.65-2.12 2.21-2.12.52 0 1.05.06 1.14.08v1.46z"/></svg>
-            Shop on Etsy →
-          </a>
-        </div>
-        <div style="width:0.5px;background:var(--color-border);align-self:stretch;"></div>
-        <div style="flex:1;min-width:200px;">
-          <p style="font-size:0.85rem;color:var(--color-text-muted);margin-bottom:var(--space-2);">Process, studies &amp; new work</p>
-          <a href="https://www.instagram.com/teaganksmith.art/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" style="display:inline-flex;align-items:center;gap:6px;">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-            Follow on Instagram →
-          </a>
-        </div>
-      </div>
-
-      <!-- ============================================================
-           FILTERS
-           ============================================================ -->
-      <div class="art-filters filter-bar" id="art-filter" role="group" aria-label="Filter artwork by theme">
-        <button class="filter-btn active" data-filter="all">All</button>
-        <button class="filter-btn" data-filter="oil-paintings">Oil Paintings</button>
-        <button class="filter-btn" data-filter="biological-illustration">Biological Illustration</button>
-        <button class="filter-btn" data-filter="digital-painting">Digital Painting</button>
-      </div>
+      <div class="art-gallery-right">
 
       <!-- ============================================================
            MASONRY GALLERY
@@ -315,7 +300,8 @@
         </div>
       </div>
 
-    </div><!-- /.container -->
+      </div><!-- /.art-gallery-right -->
+    </div><!-- /.split-layout -->
   </main>
 
   <footer class="site-footer" role="contentinfo">
@@ -333,6 +319,7 @@
 
 <script src="../js/nav.js" defer></script>
   <script src="../js/filter.js" defer></script>
+  <script src="../js/cursor.js" defer></script>
 
   <script>
     // Auto-detect image brightness and set caption text colour accordingly

@@ -18,7 +18,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="../css/main.css" />
+  <link rel="stylesheet" href="../css/main.css?v=2" />
 </head>
 <body>
 
@@ -56,55 +56,67 @@
   </nav>
 
   <main>
-    <header class="page-header">
-      <div class="page-header-inner">
+    <div class="split-layout">
+
+      <!-- ============================================================
+           LEFT: INTRO + FILTERS (sticky)
+           ============================================================ -->
+      <aside class="split-side">
         <h1 class="page-h1">Writing</h1>
-        <p class="page-header-desc">
+        <p class="split-side-desc">
           The science, policy, and ethics of decoding animal language. Reporting on the researchers doing this work, the technologies enabling it, and the harder questions underneath.
         </p>
-      </div>
-    </header>
 
-    <div class="container">
+        <div class="split-filter-group">
+          <p class="split-filter-label">Filter by format</p>
+          <div class="filter-bar" id="writing-filter-format" role="group" aria-label="Filter writing by format">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="Feature">Feature</button>
+            <button class="filter-btn" data-filter="News">News</button>
+            <button class="filter-btn" data-filter="Explainer">Explainer</button>
+            <button class="filter-btn" data-filter="Essay">Essay</button>
+            <button class="filter-btn" data-filter="Personal Essay">Personal Essay</button>
+          </div>
+        </div>
+
+        <div class="split-filter-group">
+          <p class="split-filter-label">Filter by topic</p>
+          <div class="filter-bar" id="writing-filter-topic" role="group" aria-label="Filter writing by topic">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="Animal Cognition">Animal Cognition</button>
+            <button class="filter-btn" data-filter="Bioacoustics">Bioacoustics</button>
+            <button class="filter-btn" data-filter="Conservation">Conservation</button>
+            <button class="filter-btn" data-filter="AI & Animals">AI &amp; Animals</button>
+            <button class="filter-btn" data-filter="Ethics">Ethics</button>
+          </div>
+        </div>
+
+        <div class="split-side-note">
+          <p class="label-caps" style="margin-bottom:var(--space-1);">Newsletter</p>
+          <h2 style="font-size:1.15rem;margin-bottom:var(--space-1);">Interspecies</h2>
+          <p class="text-muted" style="font-size:0.85rem;line-height:1.6;margin-bottom:var(--space-3);">
+            Interspecies communication, animal cognition, and the science of listening. Written for the scientifically curious.
+          </p>
+          <div style="display:flex;flex-direction:column;gap:var(--space-1);align-items:flex-start;">
+            <a href="https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7473099872217509888" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Subscribe on LinkedIn →</a>
+          </div>
+        </div>
+      </aside>
 
       <!-- ============================================================
-           FILTER BARS
+           RIGHT: ARTICLE FEED
            ============================================================ -->
-      <div style="margin-bottom:var(--space-3);">
-        <p class="label-caps" style="margin-bottom:var(--space-2);color:var(--color-text-muted);font-size:10px;">Filter by format</p>
-        <div class="filter-bar" id="writing-filter-format" role="group" aria-label="Filter writing by format">
-          <button class="filter-btn active" data-filter="all">All</button>
-          <button class="filter-btn" data-filter="Feature">Feature</button>
-          <button class="filter-btn" data-filter="News">News</button>
-          <button class="filter-btn" data-filter="Explainer">Explainer</button>
-          <button class="filter-btn" data-filter="Essay">Essay</button>
-          <button class="filter-btn" data-filter="Personal Essay">Personal Essay</button>
-        </div>
-      </div>
-
-      <div style="margin-bottom:var(--space-6);">
-        <p class="label-caps" style="margin-bottom:var(--space-2);color:var(--color-text-muted);font-size:10px;">Filter by topic</p>
-        <div class="filter-bar" id="writing-filter-topic" role="group" aria-label="Filter writing by topic">
-          <button class="filter-btn active" data-filter="all">All</button>
-          <button class="filter-btn" data-filter="Animal Cognition">Animal Cognition</button>
-          <button class="filter-btn" data-filter="Bioacoustics">Bioacoustics</button>
-          <button class="filter-btn" data-filter="Conservation">Conservation</button>
-          <button class="filter-btn" data-filter="AI & Animals">AI &amp; Animals</button>
-          <button class="filter-btn" data-filter="Ethics">Ethics</button>
-        </div>
-      </div>
-
-      <!-- ============================================================
-           CLIPS GRID
-           ============================================================ -->
-
-      <div class="card-grid clips-grid" role="list">
+      <div class="clips-grid clips-feed" role="list">
 
         <!-- Issue 6 — Who owns a whale's voice? -->
-        <article class="card clip-card"
+        <article class="clip-card clip-card-cover"
           data-format="Feature"
           data-topic="Ethics AI & Animals Conservation"
           role="listitem">
+          <a href="https://www.linkedin.com/pulse/who-owns-whales-voice-teagan-keely-smith-dv1nc" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true">
+            <img class="clip-cover-img" src="../images/writing/who-owns-a-whales-voice.jpg" alt="" loading="lazy" />
+          </a>
+          <div class="clip-card-body">
           <p class="card-outlet">Interspecies · LinkedIn</p>
           <h2 class="card-headline">
             <a href="https://www.linkedin.com/pulse/who-owns-whales-voice-teagan-keely-smith-dv1nc" target="_blank" rel="noopener noreferrer">
@@ -121,13 +133,18 @@
             <span class="pill pill-accent">AI &amp; Animals</span>
             <span class="pill pill-accent">Conservation</span>
           </div>
+          </div>
         </article>
 
         <!-- Issue 5 — The AI built to speak whale, acoustically -->
-        <article class="card clip-card"
+        <article class="clip-card clip-card-cover"
           data-format="Explainer"
           data-topic="AI & Animals Bioacoustics Ethics"
           role="listitem">
+          <a href="https://www.linkedin.com/pulse/ai-built-speak-whale-acoustically-teagan-keely-smith-uwfmc" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true">
+            <img class="clip-cover-img" src="../images/writing/ai-built-to-speak-whale.jpg" alt="" loading="lazy" />
+          </a>
+          <div class="clip-card-body">
           <p class="card-outlet">Interspecies · LinkedIn</p>
           <h2 class="card-headline">
             <a href="https://www.linkedin.com/pulse/ai-built-speak-whale-acoustically-teagan-keely-smith-uwfmc" target="_blank" rel="noopener noreferrer">
@@ -144,13 +161,18 @@
             <span class="pill pill-accent">Bioacoustics</span>
             <span class="pill pill-accent">Ethics</span>
           </div>
+          </div>
         </article>
 
         <!-- Issue 4 — We taught AI to speak animal before we learned to listen -->
-        <article class="card clip-card"
+        <article class="clip-card clip-card-cover"
           data-format="Essay"
           data-topic="Ethics AI & Animals"
           role="listitem">
+          <a href="https://www.linkedin.com/pulse/we-taught-ai-speak-animal-before-learned-listen-teagan-keely-smith-evrtc" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true">
+            <img class="clip-cover-img" src="../images/writing/taught-ai-to-speak-animal.jpg" alt="" loading="lazy" />
+          </a>
+          <div class="clip-card-body">
           <p class="card-outlet">Interspecies · LinkedIn</p>
           <h2 class="card-headline">
             <a href="https://www.linkedin.com/pulse/we-taught-ai-speak-animal-before-learned-listen-teagan-keely-smith-evrtc" target="_blank" rel="noopener noreferrer">
@@ -166,13 +188,18 @@
             <span class="pill pill-accent">Ethics</span>
             <span class="pill pill-accent">AI &amp; Animals</span>
           </div>
+          </div>
         </article>
 
         <!-- Issue 3 — Inside the race to talk to animals -->
-        <article class="card clip-card"
+        <article class="clip-card clip-card-cover"
           data-format="Feature"
           data-topic="Animal Cognition Bioacoustics AI & Animals"
           role="listitem">
+          <a href="https://www.linkedin.com/pulse/inside-race-talk-animals-how-finchs-errors-won-100k-smith-dzpvc" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true">
+            <img class="clip-cover-img" src="../images/writing/race-to-talk-to-animals.jpg" alt="" loading="lazy" />
+          </a>
+          <div class="clip-card-body">
           <p class="card-outlet">Interspecies · LinkedIn</p>
           <h2 class="card-headline">
             <a href="https://www.linkedin.com/pulse/inside-race-talk-animals-how-finchs-errors-won-100k-smith-dzpvc" target="_blank" rel="noopener noreferrer">
@@ -189,13 +216,18 @@
             <span class="pill pill-accent">Bioacoustics</span>
             <span class="pill pill-accent">AI &amp; Animals</span>
           </div>
+          </div>
         </article>
 
         <!-- Issue 2 — Science has been trying to tell us whales have minds since 1967 -->
-        <article class="card clip-card"
+        <article class="clip-card clip-card-cover"
           data-format="Essay"
           data-topic="Animal Cognition Bioacoustics Ethics"
           role="listitem">
+          <a href="https://www.linkedin.com/pulse/cetacean-cognition-brief-history-teagan-keely-smith-yu7fc/" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true">
+            <img class="clip-cover-img" src="../images/writing/whales-have-minds-1967.jpg" alt="" loading="lazy" />
+          </a>
+          <div class="clip-card-body">
           <p class="card-outlet">Interspecies · LinkedIn</p>
           <h2 class="card-headline">
             <a href="https://www.linkedin.com/pulse/cetacean-cognition-brief-history-teagan-keely-smith-yu7fc/" target="_blank" rel="noopener noreferrer">
@@ -212,13 +244,18 @@
             <span class="pill pill-accent">Bioacoustics</span>
             <span class="pill pill-accent">Ethics</span>
           </div>
+          </div>
         </article>
 
         <!-- Issue 1 — What makes a sperm whale alphabet -->
-        <article class="card clip-card"
+        <article class="clip-card clip-card-cover"
           data-format="Explainer"
           data-topic="Bioacoustics Animal Cognition AI & Animals"
           role="listitem">
+          <a href="https://www.linkedin.com/pulse/what-makes-sperm-whale-alphabet-teagan-keely-smith-tbzfc/" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true">
+            <img class="clip-cover-img" src="../images/writing/sperm-whale-alphabet.jpg" alt="" loading="lazy" />
+          </a>
+          <div class="clip-card-body">
           <p class="card-outlet">Interspecies · LinkedIn</p>
           <h2 class="card-headline">
             <a href="https://www.linkedin.com/pulse/what-makes-sperm-whale-alphabet-teagan-keely-smith-tbzfc/" target="_blank" rel="noopener noreferrer">
@@ -235,13 +272,15 @@
             <span class="pill pill-accent">Animal Cognition</span>
             <span class="pill pill-accent">AI &amp; Animals</span>
           </div>
+          </div>
         </article>
 
         <!-- Bachelor Groups of Sperm Whales — Archive -->
-        <article class="card clip-card"
+        <article class="clip-card clip-card-cover"
           data-format="Essay"
           data-topic="Conservation Animal Cognition"
           role="listitem">
+          <div class="clip-card-body">
           <p class="card-outlet">Archive</p>
           <h2 class="card-headline">
             <a href="bachelor-groups-sperm-whales/">
@@ -257,13 +296,15 @@
             <span class="pill pill-accent">Conservation</span>
             <span class="pill pill-accent">Animal Cognition</span>
           </div>
+          </div>
         </article>
 
         <!-- Why salmon need stress — Archive -->
-        <article class="card clip-card"
+        <article class="clip-card clip-card-cover"
           data-format="Essay"
           data-topic="Conservation"
           role="listitem">
+          <div class="clip-card-body">
           <p class="card-outlet">Archive</p>
           <h2 class="card-headline">
             <a href="salmon-need-stress/">
@@ -278,98 +319,14 @@
             <span class="pill">Essay</span>
             <span class="pill pill-accent">Conservation</span>
           </div>
+          </div>
         </article>
 
       </div><!-- /.clips-grid -->
 
-      <!-- ============================================================
-           SUBSTACK SECTION
-           ============================================================ -->
-      <hr class="divider" style="margin:var(--space-12) 0 var(--space-8);" />
-
-      <section class="substack-section" aria-labelledby="newsletter-heading">
-        <div class="substack-header">
-          <p class="label-caps">Newsletter</p>
-          <h2 id="newsletter-heading" style="font-size:1.4rem;margin-top:var(--space-1);">Interspecies</h2>
-          <p class="text-muted text-sm mt-2" style="max-width:480px;line-height:1.6;">
-            A newsletter covering interspecies communication, animal cognition, and the science of listening. Written for the scientifically curious.
-          </p>
-        </div>
-
-        <div class="substack-posts" style="max-width:600px;margin-bottom:var(--space-4);">
-
-          <div class="substack-post">
-            <span class="substack-post-date">10 Aug 2026</span>
-            <span class="substack-post-title">
-              <a href="https://www.linkedin.com/pulse/who-owns-whales-voice-teagan-keely-smith-dv1nc" target="_blank" rel="noopener noreferrer">
-                Who owns a whale's voice?
-              </a>
-            </span>
-          </div>
-
-          <div class="substack-post">
-            <span class="substack-post-date">24 Jul 2026</span>
-            <span class="substack-post-title">
-              <a href="https://www.linkedin.com/pulse/ai-built-speak-whale-acoustically-teagan-keely-smith-uwfmc" target="_blank" rel="noopener noreferrer">
-                The AI built to speak whale, acoustically
-              </a>
-            </span>
-          </div>
-
-          <div class="substack-post">
-            <span class="substack-post-date">15 Jul 2026</span>
-            <span class="substack-post-title">
-              <a href="https://www.linkedin.com/pulse/we-taught-ai-speak-animal-before-learned-listen-teagan-keely-smith-evrtc" target="_blank" rel="noopener noreferrer">
-                We taught AI to speak animal before we learned to listen
-              </a>
-            </span>
-          </div>
-
-          <div class="substack-post">
-            <span class="substack-post-date">29 Jun 2026</span>
-            <span class="substack-post-title">
-              <a href="https://www.linkedin.com/pulse/inside-race-talk-animals-how-finchs-errors-won-100k-smith-dzpvc" target="_blank" rel="noopener noreferrer">
-                Inside the race to talk to animals: how a finch's errors won 100K
-              </a>
-            </span>
-          </div>
-
-          <div class="substack-post">
-            <span class="substack-post-date">22 Jun 2026</span>
-            <span class="substack-post-title">
-              <a href="https://www.linkedin.com/pulse/cetacean-cognition-brief-history-teagan-keely-smith-yu7fc/" target="_blank" rel="noopener noreferrer">
-                Science has been trying to tell us whales have minds since 1967
-              </a>
-            </span>
-          </div>
-
-          <div class="substack-post">
-            <span class="substack-post-date">17 Jun 2026</span>
-            <span class="substack-post-title">
-              <a href="https://www.linkedin.com/pulse/what-makes-sperm-whale-alphabet-teagan-keely-smith-tbzfc/" target="_blank" rel="noopener noreferrer">
-                What makes a sperm whale alphabet: The a, e, i, o, u (and sometimes, why) of decoding a non-human language
-              </a>
-            </span>
-          </div>
-
-        </div>
-
-        <div style="display:flex;gap:var(--space-3);flex-wrap:wrap;">
-          <a href="https://substack.com/@teagankeelysmith" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
-            Subscribe on Substack →
-          </a>
-          <a href="https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7473099872217509888" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
-            Follow on LinkedIn →
-          </a>
-        </div>
-
-        <p class="text-sm text-muted mt-3" style="font-style:italic;">
-          Published on LinkedIn Newsletter. Edited clips are listed above.
-        </p>
-      </section>
-
-    </div><!-- /.container -->
+    </div><!-- /.split-layout -->
   </main>
+
 
   <footer class="site-footer" role="contentinfo">
     <div class="footer-inner">
@@ -386,5 +343,6 @@
 
   <script src="../js/nav.js" defer></script>
   <script src="../js/filter.js" defer></script>
+  <script src="../js/cursor.js" defer></script>
 </body>
 </html>
